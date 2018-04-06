@@ -1,0 +1,293 @@
+@font-face {
+    font-family: folhas;
+    src: local('folhas'), url("Recursos/fontes/leafy.ttf") format("truetype");
+}
+
+body{
+    margin: 50px 0;
+    padding: 0;
+    background-color: #ECE9B6;
+}
+
+header{
+    height: 7vh;
+    min-height: 60px;
+    width: 100%;
+    background-color: #57B04D;
+    color: white;
+    font-size: 150%;
+}
+
+h1{
+    margin: 0 30px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #B18D68;
+    min-height: 40px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 1px 0 20px 2px;
+}
+
+nav form{
+    margin: 5px;
+    margin-left: 30px;
+}
+
+nav form input{
+    height: 25px;
+    border: 0;
+    border-radius: 10px;
+    padding-left: 7px;
+    margin: 0 2px;
+}
+
+li{
+    list-style: none;
+    color: #FFFFFF;
+}
+
+li:hover{
+    color: #D3D3D3;
+    cursor: pointer;
+}
+
+main{
+    box-shadow: 0 10px 30px 2px;
+    width: 60%;
+    margin: auto;
+    background-color: white;
+}
+
+section{
+    margin: 0 40px;
+    padding-top: 20px; 
+    border-bottom: 4px solid #949793;
+}
+
+.imgText_div{
+    height: auto;
+}
+
+.button_div{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0;
+    padding-bottom: 0;
+}
+
+.botao_amarelo{
+    background-color: #EE8900;
+    border: 0;
+    border-radius: 5px;
+    border: 3px solid #EE8900;
+    height: 60px;
+    max-height: 60px;
+    min-width: 200px;
+    max-width: 300px;
+    flex: 1;
+    color: white;
+    font-size: 130%;
+    margin: 5px;
+    transition-duration: 0.5s;
+}
+
+.botao_amarelo:hover{
+    background-color: #F4F0AF;
+    color: black;
+    cursor: pointer;
+}
+
+.fruit_image{
+    width: 280px;
+    height: 400px;
+    float: left;
+    position: relative;
+    left: -100px;
+    top: -20px;
+}
+
+#imagem_abacaxi{
+    shape-outside: polygon(48% 0, 40% 34%, 57% 46%, 67% 70%, 51% 86%, 0 87%, 0 0);
+}
+
+#imagem_laranja{
+    shape-outside: polygon(48% 39%, 63% 47%, 73% 63%, 72% 79%, 59% 89%, 0 89%, 0 0, 16% 0, 19% 19%, 40% 25%);
+}
+
+#imagem_abacate{
+    shape-outside: polygon(50% 37%, 66% 45%, 75% 59%, 72% 79%, 59% 89%, 0 92%, 0 0, 16% 0, 19% 19%, 48% 21%);
+}
+
+.imgText_div p{
+    padding-top: 70px;
+    font-size: 150%; 
+    height: auto;
+    margin: 0;
+    text-align: justify;
+}
+
+.imgText_div p::first-letter{
+    font-family: folhas;
+    font-size: 300%;
+    color: #57B04D;
+}
+
+.imgText_div p::first-line{
+    font-family: 'Indie Flower', cursive;
+    font-size: 130%;
+
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 30px;
+    max-width: 230px;
+    margin: 5px auto;
+}
+
+
+.fake_facebook_button{
+    background-color: #4765C0;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 12px;
+    height: 20px;
+    width: 100px;
+    font-weight: bold;
+}
+
+.fake_facebook_button:hover{
+    background-color: #29459B;
+    color: white;
+    cursor: pointer;
+}
+
+#formulario_endereco{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#formulario_endereco form{
+    display: none;
+    margin: auto;
+    width: 60vmin;
+    height: 60vmin;
+    background-color: #DEE3DC;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#formulario_endereco form input{
+    margin: 10px;
+    height: 30px;
+    width: 85%;
+    border-radius: 5px;
+    padding-left: 10px; 
+}
+
+#formulario_endereco form div{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#mapa{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#mapa img:first-child{
+    display: none;
+    margin: auto;
+    width: 80vmin;
+    height: 80vmin;
+    background-color: #DEE3DC;
+    border-radius: 20px;
+    padding: 10px;    
+}
+
+.botao_fechar{
+    display: none;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #DEE3DC;
+}
+
+.botao_fechar:hover{
+    cursor: pointer;
+}
+
+#mapa .botao_fechar{
+    top: 12vh;
+    left: 72vw;
+}
+
+#formulario_endereco .botao_fechar{
+    top: 18vh;
+    left: 68.5vw;
+}
+
+.grow{
+    animation-duration: 0.5s;
+    animation-name: grow;
+}
+
+@keyframes grow{
+    from{
+        top: 25vh;
+        left: 63vw;
+        width: 0;
+        height: 0;
+    }
+
+    to{
+    }
+}
+
+.fadein{
+    animation-duration: 0.5s;
+    animation-name: fadein;
+}
+
+@keyframes fadein{
+    from{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    to{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
